@@ -1,0 +1,129 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk body dengan gambar latar belakang */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+    background: url('https://cs1.gtaall.com/attachments/4dc09/2018-12/original/2e9d53f85fba532e1692b5ca196d08dfe9efd384/9498-GTA5-2018-12-24-12-13-16-81.jpg') no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6; /* Menambahkan jarak antar baris */
+}
+
+/* Styling untuk header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solID #444;
+    position: relative;
+    z-index: 10; /* Memastikan header berada di atas konten lainnya */
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff4081; /* Warna aksen pada hover */
+}
+
+/* Styling untuk konten utama */
+.container {
+    wIDth: 90%;
+    max-wIDth: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 10; /* Memastikan konten utama berada di atas gambar latar belakang */
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-bottom: 2px solID #ff4081;
+    padding-bottom: 10px;
+}
+
+/* Styling untuk form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="tel"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solID #555;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #222;
+    color: #e0e0e0;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #ff4081;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background: #e6007e;
+    transform: scale(1.05);
+}
+
+/* Styling untuk footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 3px solID #444;
+    position: relative;
+    bottom: 0;
+    wIDth: 100%;
+    z-index: 10; /* Memastikan footer berada di atas gambar latar belakang */
+}
+
+footer p {
+    margin: 0;
+}
